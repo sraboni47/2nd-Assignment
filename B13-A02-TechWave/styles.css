@@ -412,6 +412,13 @@ body {
   color: #19ff9b;
 }
 
+.tw-episodes {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+
 /* Meet the Host */
 .tw-host {
   padding: 120px 60px;
@@ -467,3 +474,25 @@ body {
   text-decoration: none;
   font-size: 14px;
 }
+
+.tw-featured,
+.tw-host {
+  background: radial-gradient(
+    ellipse at center,
+    #2a0d4e 0%,
+    #160629 55%,
+    #0b0219 100%
+  );
+}
+
+
+.tw-logo-wrap::before,
+.tw-logo-wrap::after {
+  content: none !important;
+}
+
+
+
+
+
+
