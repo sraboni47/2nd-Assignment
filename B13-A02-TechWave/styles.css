@@ -26,8 +26,6 @@ body {
   color: white;
 }
 
-
-
 /* MENU */
 .nav-menu {
   display: flex;
@@ -65,7 +63,6 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 0 30px rgba(255, 184, 0, 0.6);
 }
-
 
 .tw-hero {
   min-height: 100vh;
@@ -147,7 +144,6 @@ body {
   color: #19ff9b;
 }
 
-
 .tw-logo-wrap {
   width: 260px;
   height: 260px;
@@ -171,19 +167,17 @@ body {
   width: 120px;
 }
 
-
 .tw-hero {
   min-height: 100vh;
-  background-image: url('/B13-A02-TechWave/assets/hero-bg.png');
+  background-image: url("/B13-A02-TechWave/assets/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-
 .tw-hero {
   min-height: 100vh;
-  background-image: url('/B13-A02-TechWave/assets/hero-bg.png');
+  background-image: url("/B13-A02-TechWave/assets/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -229,3 +223,247 @@ body {
   color: #cfcfcf;
 }
 
+.tw-about {
+  padding: 120px 60px;
+  background: linear-gradient(180deg, #120022, #0b0219);
+  text-align: center;
+  color: #ffffff;
+}
+
+.tw-about-title {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.tw-about-text {
+  max-width: 820px;
+  margin: 0 auto 18px;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #cfcfcf;
+}
+
+.tw-about-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 60px 0;
+}
+
+/* Stats */
+.tw-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.tw-stat-item h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #19ff9b;
+  margin-bottom: 10px;
+}
+
+.tw-stat-item span {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #bfbfbf;
+}
+
+.tw-why {
+  padding: 120px 60px;
+  background: linear-gradient(180deg, #1a0633, #0b0219);
+  color: #ffffff;
+}
+
+.tw-why-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 70px;
+}
+
+.tw-why-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio global global"
+    "interview interview resource";
+  gap: 30px;
+}
+
+/* Card */
+.tw-why-card {
+  background: #2a0d4e;
+  border-radius: 22px;
+  padding: 32px;
+}
+
+.tw-why-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tw-why-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+/* Icon placeholder */
+.tw-why-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 18px;
+}
+
+/* Special sizes */
+.tw-why-card-tall {
+  grid-row: span 2;
+}
+
+.tw-why-card-wide {
+  grid-column: span 2;
+}
+
+/* Section title */
+.tw-section-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 60px;
+  color: #fff;
+}
+
+/* Featured Episodes */
+.tw-featured {
+  padding: 120px 60px;
+}
+
+.tw-episodes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.tw-episode-card {
+  background: #2a0d4e;
+  border-radius: 24px;
+  padding: 18px;
+  color: #fff;
+}
+
+.tw-episode-thumb {
+  position: relative;
+  display: block;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.tw-episode-thumb img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Play button */
+.tw-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tw-play-btn::before {
+  content: "▶";
+  font-size: 36px;
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #ff2cdf, #ffb800);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.tw-episode-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.tw-episode-card p {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 12px;
+}
+
+.tw-duration {
+  font-size: 13px;
+  color: #19ff9b;
+}
+
+/* Meet the Host */
+.tw-host {
+  padding: 120px 60px;
+}
+
+.tw-host-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #2a0d4e;
+  border-radius: 28px;
+  padding: 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.tw-host-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tw-host-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.tw-host-info p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+/* Social icons */
+.tw-host-social {
+  display: flex;
+  gap: 12px;
+}
+
+.tw-host-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ff2cdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff2cdf;
+  text-decoration: none;
+  font-size: 14px;
+}
